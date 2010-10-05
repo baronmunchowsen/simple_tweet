@@ -12,6 +12,6 @@
 function simple_tweet_uninstall() {
   // this will delete any of the varables created in the variable table
   db_query("DELETE FROM {variable} WHERE name LIKE 'simple_tweet_%'");
-  cache_clear_all('variables', 'cache');
+  cache_clear_all('simple_tweet', 'cache');
 }
 
